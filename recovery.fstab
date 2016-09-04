@@ -1,0 +1,13 @@
+# Android fstab file.
+#<src>                                       <mnt_point>         <type>    <mnt_flags and options>       <fs_mgr_flags>
+/dev/block/rknand_user                  /mnt/internal_sd     vfat            defaults                  defaults            
+/dev/block/mmcblk0p1                    /mnt/external_sd     vfat            /dev/block/mmcblk0        defaults           
+/dev/block/rknand_system                /system              ext4            defaults                  defaults
+/dev/block/rknand_cache                 /cache               ext4            defaults                  defaults
+/dev/block/rknand_metadata              /metadata            ext4            defaults                  defaults
+/dev/block/rknand_userdata              /data                ext4            defaults                  defaults
+
+boot                                         /boot                mtd             defaults                  defaults
+recovery                                     /recovery            mtd             defaults                  defaults
+backup                                       /backup              mtd             defaults                  defaults
+

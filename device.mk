@@ -42,7 +42,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.${TARGET_BOARD_PLATFORM_PRODUCT}.rc:root/init.${TARGET_BOARD_PLATFORM_PRODUCT}.rc \
     $(LOCAL_PATH)/fstab.rk30board.bootmode.unknown:root/fstab.rk30board.bootmode.unknown \
-    $(LOCAL_PATH)/fstab.rk30board.bootmode.emmc:root/fstab.rk30board.bootmode.emmc
+    $(LOCAL_PATH)/fstab.rk30board.bootmode.emmc:root/fstab.rk30board.bootmode.emmc \
+    $(LOCAL_PATH)/recovery.fstab:root/etc/recovery.fstab \
+    $(LOCAL_PATH)/nand/rk30xxnand_ko.ko.3.10.0:root/rk30xxnand_ko.ko.3.10.0 \
+    $(LOCAL_PATH)/nand/drmboot.ko:root/drmboot.ko
+    
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
