@@ -1,0 +1,15 @@
+# Android fstab file.
+#<src>                                       <mnt_point>         <type>    <mnt_flags and options>       <fs_mgr_flags>
+
+/uboot      emmc         /dev/block/platform/ff0f0000.rksdmmc/by-name/uboot        flags=backup=1;display=Uboot;flashimg
+/trust      emmc         /dev/block/platform/ff0f0000.rksdmmc/by-name/trust        flags=backup=1;display=Trust;flashimg
+/misc       emmc         /dev/block/platform/ff0f0000.rksdmmc/by-name/misc
+/resource   emmc         /dev/block/platform/ff0f0000.rksdmmc/by-name/resource     flags=backup=1;display=Resource;flashimg
+/kernel     emmc         /dev/block/platform/ff0f0000.rksdmmc/by-name/kernel       flags=backup=1;display=Kernel;flashimg
+/boot       emmc         /dev/block/platform/ff0f0000.rksdmmc/by-name/boot         flags=backup=1;display=Boot
+/recovery   emmc         /dev/block/platform/ff0f0000.rksdmmc/by-name/recovery     flags=backup=1;display=Recovery
+/cache      ext4         /dev/block/platform/ff0f0000.rksdmmc/by-name/cache        flags=display=Cache
+/data       ext4         /dev/block/platform/ff0f0000.rksdmmc/by-name/userdata
+/system     ext4         /dev/block/platform/ff0f0000.rksdmmc/by-name/system       flags=display=System
+/external_sd    auto     /dev/block/mmcblk1p1       				   flags=wipeingui;storage;removable;display="External SD"
+/usb-otg    auto         /dev/block/sda1            				   flags=display="USB Storage";storage;wipeingui;removable
