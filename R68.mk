@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rk3368.mk \
-    $(LOCAL_DIR)/omni_R68_box.mk
+$(call inherit-product, $(LOCAL_PATH)/rk3368.mk)
+
+PRODUCT_NAME := R68
+PRODUCT_DEVICE := R68
+PRODUCT_MODEL := Orion R68
+
+PRODUCT_AAPT_CONFIG := normal tvdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := tvdpi

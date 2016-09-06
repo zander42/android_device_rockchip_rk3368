@@ -31,11 +31,11 @@ PRODUCT_PACKAGES += \
 #copy init.rc for tablet or box product
 #ifeq ($(strip $(TARGET_BOARD_PLATFORM_PRODUCT)), box)
 #PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rk3368_box/init.rc:root/init.rc
+    $(LOCAL_PATH)/R68/init.rc:root/init.rc
 #else
 #ifeq ($(strip $(TARGET_BOARD_PLATFORM_PRODUCT)), tablet)
 #PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rk3368_32/init.rc:root/init.rc
+#$(LOCAL_PATH)/rk3368_32/init.rc:root/init.rc
 #endif
 #endif
 

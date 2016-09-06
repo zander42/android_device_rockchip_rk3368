@@ -1,6 +1,2 @@
-add_lunch_combo rk3368-userdebug
-add_lunch_combo rk3368_32-userdebug
-add_lunch_combo rk3368_box-userdebug
-add_lunch_combo rk3368_64-userdebug
-add_lunch_combo omni_rk3368_box-eng
+add_lunch_combo omni_R68_box-eng
 
