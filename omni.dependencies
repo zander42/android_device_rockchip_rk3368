@@ -1,9 +1,8 @@
 [
   {
-    "remote": "omnirom",
+    
     "repository": "android_device_rockchip_rk3368",
     "target_path": "device/rockchip/rk3368",
-    "revision": "android-5.0"
   
   }
 ]
