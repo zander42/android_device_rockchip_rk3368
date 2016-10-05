@@ -44,6 +44,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.rk30board.bootmode.unknown:root/fstab.rk30board.bootmode.unknown \
     $(LOCAL_PATH)/fstab.rk30board.bootmode.emmc:root/fstab.rk30board.bootmode.emmc \
     $(LOCAL_PATH)/recovery.fstab:root/etc/recovery.fstab \
+    $(LOCAL_PATH)/recovery.emmc.fstab:root/etc/recovery.emmc.fstab \
+    $(LOCAL_PATH)/init.recovery.logd.rc:root/init.recovery.logd.rc \
     $(LOCAL_PATH)/nand/rk30xxnand_ko.ko.3.10.0:root/rk30xxnand_ko.ko.3.10.0 \
     $(LOCAL_PATH)/nand/drmboot.ko:root/drmboot.ko
     
